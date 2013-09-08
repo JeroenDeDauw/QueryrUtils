@@ -7,15 +7,21 @@ cd QueryrAPI
 
 npm install
 
-while true
+iteration=0
+
+while [ $iteration -lt 3 ]
 do
     node api &
 
-    sleep 20
+    sleep 5
 
     git pull
     npm update
 
-    kill -9 $(ps -ef |grep `whoami`| grep 'node api' | cut -c10-15 | head -n1) 
+    kill -9 $(ps -ef |grep `whoami`| grep 'node api' | cut -c10-15 | head -n1)
+    iteration=$[$iteration+1]
 done
 
+cd ..
+git pull
+"$0" &
