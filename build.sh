@@ -9,7 +9,7 @@ npm install
 
 iteration=0
 
-while [ $iteration -lt 1 ]
+while [ $iteration -lt 3 ]
 do
     node api &
 
