@@ -24,4 +24,4 @@ done
 
 cd ..
 git pull
-"./$0" &
+"bash $0" &
