@@ -11,7 +11,7 @@ while true
 do
     node api &
 
-    sleep 30
+    sleep 20
 
     git pull
     npm update
