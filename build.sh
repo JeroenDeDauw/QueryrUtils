@@ -2,7 +2,6 @@
 
 set -x
 
-rm -rf QueryrAPI
 git clone git@github.com:JeroenDeDauw/QueryrAPI.git
 cd QueryrAPI
 
@@ -12,7 +11,7 @@ while true
 do
     node api &
 
-    sleep 120
+    sleep 10
 
     git pull
     npm update
