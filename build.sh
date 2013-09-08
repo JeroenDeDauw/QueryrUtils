@@ -9,11 +9,11 @@ npm install
 
 iteration=0
 
-while [ $iteration -lt 3 ]
+while [ $iteration -lt 10 ]
 do
     node api &
 
-    sleep 5
+    sleep 20
 
     git pull
     npm update
