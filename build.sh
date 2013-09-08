@@ -9,7 +9,7 @@ npm install
 
 iteration=0
 
-while [ $iteration -lt 3 ]
+while [ $iteration -lt 1 ]
 do
     node api &
 
@@ -24,4 +24,5 @@ done
 
 cd ..
 git pull
+yes "foo" &
 #"./$0" &
