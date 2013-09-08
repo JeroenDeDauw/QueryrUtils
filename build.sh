@@ -24,5 +24,4 @@ done
 
 cd ..
 git pull
-yes "foo" &
-#"./$0" &
+"./$0" &
