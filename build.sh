@@ -17,6 +17,7 @@ do
     git pull
     npm update
 
+    ps -ef |grep `whoami`| grep 'node api' | cut -c10-15
     kill -9 $(ps -ef |grep `whoami`| grep 'node api' | cut -c10-15 | head -n1) 
 done
 
